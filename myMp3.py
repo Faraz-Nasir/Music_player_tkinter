@@ -154,7 +154,7 @@ def play_time():
     full_time_song=time.strftime("%M:%S",time.gmtime(song_length))
     timeas=time.strftime("%M:%S",time.gmtime(current_time/1000))
     time_status_bar.config(text=f'{timeas} of {full_time_song}')
-    #my_slider.config(value=current_time/1000)
+    my_slider.config(value=current_time/1000)
     print(f'current time:- {current_time/1000} of  {song_length}')
     time_status_bar.after(1000,play_time)
 
